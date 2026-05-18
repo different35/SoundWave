@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0a0a0f;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.glass-card {
+  background: rgba(18, 18, 26, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.glass-button {
+  background-color: rgba(139, 92, 246, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.glass-button:hover {
+  background-color: rgb(139, 92, 246);
+  border-color: rgba(139, 92, 246, 0.4);
+}
+
+.tab-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  z-index: 50;
+}
+
+.tab-icon {
+  width: 24px;
+  height: 24px;
+  transition: color 0.3s ease;
+}
+
+.tab-active {
+  color: #8b5cf6;
+}
+
+.tab-active .tab-icon {
+  color: #8b5cf6;
+}
+
+.tab-inactive {
+  color: #71717a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.tab-inactive:hover {
+  color: #ffffff;
+}
+
+.tab-inactive:hover .tab-icon {
+  color: #ffffff;
+}

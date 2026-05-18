@@ -1,0 +1,7 @@
+.
+├── CLAUDE.md
+├── PLAN.md
+├── README.md
+└── proje_yapisi.txt
+
+1 directory, 4 files
